@@ -1,4 +1,9 @@
 .vscode
+.env
+.DS_Store
+*/settings/local.py
+*/settings/test.py
+
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
@@ -88,3 +93,4 @@ venv.bak/
 # mkdocs documentation
 /site
 
+tmp_email/
