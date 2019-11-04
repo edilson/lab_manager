@@ -1,0 +1,1 @@
+web: gunicorn lab_manager.wsgi --limit-request-line 8188 --log-file -

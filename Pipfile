@@ -1,0 +1,23 @@
+[[source]]
+name = "pypi"
+url = "https://pypi.org/simple"
+verify_ssl = true
+
+[dev-packages]
+django-naomi = "*"
+pylint = "*"
+pylint-django = "*"
+
+[packages]
+django = "*"
+python-decouple = "*"
+dj-database-url = "*"
+djangorestframework = "*"
+django-templated-email = "*"
+gunicorn = "*"
+whitenoise = "*"
+django-autocomplete-light = "*"
+django-heroku = "*"
+
+[requires]
+python_version = "3.6"
