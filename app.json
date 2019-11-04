@@ -1,6 +1,6 @@
 {
-    "name": "vision-i40-staging",
-    "description": "Company Service Heroku app.",
+    "name": "lab-manager-v2",
+    "description": "Lab Manager Heroku app.",
     "scripts": {
       "postdeploy": "python manage.py migrate"
     },
