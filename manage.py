@@ -2,10 +2,12 @@
 """Django's command-line utility for administrative tasks."""
 import os
 import sys
-
+from decouple import config
 
 def main():
-    os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'lab_manager.settings')
+    settings_module = config('DJANGO_SETTINGS_MODULE', default=None)
+
+    os.environ.setdefault('DJANGO_SETTINGS_MODULE', settings_module)
     try:
         from django.core.management import execute_from_command_line
     except ImportError as exc:

@@ -17,7 +17,7 @@ ADMINS = (
 
 HOST = config('HOST', default='http://127.0.0.1:8000')
 
-# AUTH_USER_MODEL = 'users.User'
+AUTH_USER_MODEL = 'users.User'
 
 ALLOWED_HOSTS = []
 
@@ -28,6 +28,9 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+
+    'common',
+    'users',
 ]
 
 MIDDLEWARE = [

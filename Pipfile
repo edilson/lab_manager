@@ -19,6 +19,7 @@ whitenoise = "*"
 django-autocomplete-light = "*"
 django-heroku = "*"
 django-log-request-id = "*"
+django-model-utils = "*"
 
 [requires]
 python_version = "3.6"
