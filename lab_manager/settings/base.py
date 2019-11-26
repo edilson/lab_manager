@@ -29,7 +29,10 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
 
+    'rest_framework',
+
     'common',
+    'lab_manager',
     'users',
 ]
 
