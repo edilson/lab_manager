@@ -21,6 +21,7 @@ django-heroku = "*"
 django-log-request-id = "*"
 django-model-utils = "*"
 drf-nested-routers = "*"
+djangorestframework-simplejwt = "*"
 
 [requires]
 python_version = "3.6"
