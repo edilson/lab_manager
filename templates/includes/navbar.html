@@ -1,0 +1,17 @@
+{% load static %}
+{% block css %}
+    <link rel="stylesheet" href="{% assets 'css/navbar.css' %}">
+{% endblock %}
+
+<nav class="navbar">
+	<div class="icon__bar">
+        <img class="logo" src="{% assets 'img/estacio-logo.jpeg' %}" alt="Icon representing Estácio's logo">
+        <a href="{% url 'home' %}">Lab Manager</a>
+	</div>
+	<div class="options__bar">
+		<ul>
+			<a href="{% url 'users:login' %}">Login</a>
+			<a href="{% url 'users:signup' %}">Sign Up</a>
+		</ul>
+	</div>
+</nav>
