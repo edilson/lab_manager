@@ -1,6 +1,6 @@
+from .base import * #noqa
 from decouple import config, Csv
 from dj_database_url import parse as db_url
-from .base import * # noqa
 import django_heroku
 
 DEBUG = False
@@ -24,6 +24,9 @@ SECURE_HSTS_INCLUDE_SUBDOMAINS = True
 SECURE_CONTENT_TYPE_NOSNIFF = True
 SECURE_BROWSER_XSS_FILTER = True
 X_FRAME_OPTIONS = 'DENY'
+
+STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
+MIDDLEWARE += ('whitenoise.middleware.WhiteNoiseMiddleware',)
 
 MIDDLEWARE += ('log_request_id.middleware.RequestIDMiddleware',)
 
